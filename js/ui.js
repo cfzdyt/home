@@ -110,13 +110,12 @@ $.fn.UiBackTop=function(){
 	
 	ui.append(el);
 	
-	var windowHeight=$(window).height();
 	
 	
 	$(window).on('scroll',function(){
 		var top=$(window).scrollTop();
-		console.log(top);
-		if(top>windowHeight){
+		console.log(top)
+		if(top>200){
 			el.show();
 		}else{
 			el.hide();
@@ -125,6 +124,7 @@ $.fn.UiBackTop=function(){
 	})
 	el.on('click',function(){
 		$(window).scrollTop(0);
+		el.hide();
 	})
 	
 	

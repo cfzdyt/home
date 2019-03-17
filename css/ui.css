@@ -100,6 +100,7 @@
 	padding: 20px 10px 10px 29px;
 	background-color: #fff; 
 	box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+	z-index: 10;
 }
 .ui-menu-item-detail-group{
 	padding-bottom: 20px;
@@ -123,6 +124,11 @@
 	margin-right: 12px;
 	font-size: 12px;
 	padding-bottom: 5px;
+}
+.ui-menu-item-detail-group-list a:hover{
+	
+	color: black;
+	
 }
 .ui-menu-item-detail-group-list a:after{
 	content: '|';
@@ -217,6 +223,7 @@
 	height: 40px;
 	color: #fff;
 	background:rgba(102,102,102,.9)url(../img/icon-go-up.png) no-repeat center;
+	z-index: 10;
 }
 .ui-backTop:hover{
 	background: rgba(102,102,102,.9);
